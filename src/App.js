@@ -30,7 +30,6 @@ function App() {
           <div>
             Hi, Thank you for your willingness to participate in my study.
             Please click link below to continue.
-            {random}
           </div>
           <div>
             <button className="btn" onClick={handleLink}>
