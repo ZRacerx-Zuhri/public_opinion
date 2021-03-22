@@ -27,17 +27,21 @@ function App() {
           <img src={Logo} className="Logo" alt="Logo" />
         </div>
         <div className="conten2">
-          <div>
-            Hi, Thank you for your willingness to participate in my study.
-            Please click link below to continue.
+          <div className="greeting">
+            <div>Hi,</div>
+            <div>
+              Thank you for your willingness to participate in my study. Please
+              click link below to continue.
+            </div>
           </div>
+
           <div>
             <button className="btn" onClick={handleLink}>
               Click Here
             </button>
           </div>
 
-          <div>
+          <div className="footer">
             <div> Researcher </div>
             <div>Ridwan Prasetyo</div>
             <div>

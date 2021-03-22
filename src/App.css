@@ -2,30 +2,37 @@
   /* border: 6px solid black; */
   height: 100vh;
   box-sizing: border-box;
-  padding: 2% 0;
+  padding: 2vmax 0;
+  background-color: #33767b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #485969;
 }
 
 .Container {
-  border: solid 2px rgba(126, 126, 126, 0.397);
+  /* border: solid 2px rgba(126, 126, 126, 0.397); */
+  background-color: #ffffff;
   display: grid;
   box-sizing: border-box;
   margin: auto;
-  padding: 5% 0% 0 0%;
+  padding: 2% 0% 0% 0%;
   width: 95%;
+  max-width: 1540px;
   height: 100%;
   grid-template-areas:
     "conten1"
     "conten2";
   grid-template-rows: max-content 1fr;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(124, 124, 124, 0.315);
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.603);
 }
 
 .conten1 {
   grid-area: conten1;
   display: flex;
   justify-content: center;
+  position: relative;
   /* border: 1px solid red; */
 }
+
 .Logo {
   max-width: 100%;
   /* border: solid 3px black; */
@@ -36,13 +43,55 @@
   grid-area: conten2;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  /* padding: 3vmax 0; */
+  box-sizing: border-box;
   /* border: 1px solid blue; */
 }
 
+.conten2 div {
+}
+
+.greeting {
+  /* border: solid 1px; */
+  width: 70%;
+}
+
+.greeting div:first-child {
+  font-size: calc(1vmax + 0.7rem);
+}
+.greeting div:nth-child(2) {
+  font-size: calc(1vmax + 0.5rem);
+  text-align: justify;
+}
+.footer {
+  /* border: solid 1px; */
+  width: 70%;
+  font-size: calc(1vmax + 0.5rem);
+}
+
+.footer div:nth-child(2) {
+  font-weight: 600;
+}
+
 .btn {
-  background-color: rgb(115, 180, 233);
+  background-color: #33767b;
   font-size: 3rem;
   cursor: pointer;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+  font-size: calc(1.5vmax + 0.6rem);
+  padding: 0.8em 1.5em;
+  border-radius: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    width: 85%;
+  }
+  .greeting {
+    width: 85%;
+  }
 }
