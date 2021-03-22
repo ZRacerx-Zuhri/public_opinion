@@ -29,13 +29,13 @@
   grid-area: conten1;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   position: relative;
   /* border: 1px solid red; */
 }
 
 .Logo {
   max-width: 100%;
-  /* border: solid 3px black; */
   /* border: 1px solid red; */
 }
 
@@ -63,7 +63,7 @@
 }
 .greeting div:nth-child(2) {
   font-size: calc(1vmax + 0.5rem);
-  text-align: justify;
+  /* text-align: justify; */
 }
 .footer {
   /* border: solid 1px; */
