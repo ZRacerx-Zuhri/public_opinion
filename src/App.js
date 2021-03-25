@@ -30,6 +30,7 @@ function App() {
         <div className="conten2">
           <div className="greeting">
             <div>Hi,</div>
+            <br />
             <div>
               Thank you for your willingness to participate in my study. Please
               click link below to continue.

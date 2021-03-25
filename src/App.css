@@ -59,7 +59,7 @@
 }
 
 .greeting div:first-child {
-  font-size: calc(1vmax + 0.7rem);
+  font-size: calc(1vmax + 0.5rem);
 }
 .greeting div:nth-child(2) {
   font-size: calc(1vmax + 0.5rem);
