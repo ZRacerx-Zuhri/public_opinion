@@ -9,16 +9,16 @@ function App() {
     Setrandom(Math.floor(Math.random() * 2));
   }, []);
 
-  console.log(random);
+  // console.log(random);
   let handleLink = () => {
-    alert("Under Maintenance");
-    // !random
-    //   ? window.location.replace(
-    //       "https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHpKPtzxfscJEiugEy07kuoNUN1FTSDZPVDE3Rjg3WEdLUDhCWUhHNDVIQS4u"
-    //     )
-    //   : window.location.replace(
-    //       "https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHpKPtzxfscJEiugEy07kuoNUNU5JWUNTUVFQM1ZTRjJMMENSOEU1VEFNUS4u"
-    //     );
+    // alert("Under Maintenance");
+    !random
+      ? window.location.replace(
+          "https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHpKPtzxfscJEiugEy07kuoNUN1FTSDZPVDE3Rjg3WEdLUDhCWUhHNDVIQS4u"
+        )
+      : window.location.replace(
+          "https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHpKPtzxfscJEiugEy07kuoNUNU5JWUNTUVFQM1ZTRjJMMENSOEU1VEFNUS4u"
+        );
   };
 
   return (
